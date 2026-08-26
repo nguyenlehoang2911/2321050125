@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 4</title>
+</head>
+<body>
+    <h1>Form tạo thông tin</h1>
+    <form>
+        <!-- Input nếu không truyền type thì
+        type mặc định sẽ mặc định là text -->
+        <div>
+            <p><b>Họ và Tên :</b></p>
+            <input type="text" name="hoVaTen">
+        </div>
+        <div>
+            <p><b>Giới thiệu :</b></p>
+            <textarea name="gioiThieu"></textarea>
+        </div>
+        <div>
+            <p><b>Email :</b></p>
+            <input type="email" name="email">
+        </div>
+        <!-- ><div>
+            <p><b>SDT :</b></p>
+            <input name="soDienThoai"
+            type="tel"
+            placeholder="Dạng số"
+            required
+            pattern="([0-9]{1}) (-[0-9]{3}) (-[0-9]{3}) (-[0-9]{3}))"
+            >
+        </div> -->
+        <div>
+            <p><b>SDT :</b></p>
+            <input name="soDienThoai"
+            type="tel"
+            placeholder="Dạng số"
+            required
+            pattern="([0]{1} ([9,3,6,8]{1}) ([0-9]{8}))"
+            >
+        </div>
+        <div>
+            <p><b>Giới tính</b></p>
+            <input type="radio" name="gioiTinh" value="nam">Nam<br>
+            <input type="radio" name="gioiTinh" value="nu">Nữ
+        </div>
+        <div>
+            <p><b>Sở thích</b></p>
+            Game:<input type="checkbox" name="soThich" value="game"><br>
+            Music:<input type="checkbox" name="soThich" value="Music"><br>
+            Sport:<input type="checkbox" name="soThich" value="Sport"><br>
+        </div>
+        <div>
+            <p><b>Trình duyệt web hay sử dụng</b></p>
+                <input list="browsers">
+                 <datalist id="browsers">
+                    <option value="Chrome"></option>
+                    <option value="Firefox"></option>
+                    <option value="Edge"></option>
+                 </datalist>
+        </div>
+        <div>
+            <select name="browsers">
+                <option value="Edge">Edge</option>
+                <option value="Chrome">Chrome</option>
+                <option value="Firefox">Firefox</option>
+            </select>
+        </div>
+        <div>
+            0 <input type="range" id="a" value="50"> 100
+        </div>
+        <div>
+            <input type="submit">
+            <button>Click</button>
+            <input type="reset">
+        </div>
+        <div>
+            <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/CKI8iQTgZKU?si=EM9TK4UcFbokbR5p" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div>
+            <MARQUEE>
+                văn bản
+            </MARQUEE>
+            <audio controls>
+                <source src="" type="audio/mp3">
+            </audio>
+            <video controls>
+                <source src="" tupe="video/mp4">
+            </video>
+        </div>
+    </form>
+</body>
+</html>
