@@ -1,0 +1,83 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ABC</h1>
+    <form>
+        <div>
+            <p><b>Mobile number</b></p>
+            <input 
+            type="email"
+            type="tel"
+            placeholder="Mobile Number"
+            required
+            pattern="([0]{1} ([9,3,6,8]{1}) ([0-9]{8}))"
+            >
+        </div>
+        <!-- <div>
+            <p><b>Email</b></p>
+            <input
+            type="email"
+            placeholder="Email"
+            required
+            >
+        </div> -->
+        <div>
+            <p><b>Password</b></p>
+            <input
+            type="password"
+            placeholder="Password"
+            required
+            >
+        </div>
+        <!-- <div>
+            <p><b>Birthday</b></p>
+            <input
+            type="date"
+            placeholder="Birthday"
+            required
+            >
+        </div> -->
+        <div>
+            <P><b>Birthday</b></P>
+            <input 
+            list="month"
+            placeholder="Month"
+            >
+            <datalist id="month">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </datalist>
+            <input 
+            list="day"
+            placeholder="Day"
+            >
+            <datalist id="day">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </datalist>
+            <input 
+            list="year"
+            placeholder="Year"
+            >
+            <datalist id="year">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </datalist>
+        </div>
+        <div>
+            <p><b>Username</b></p>
+            <input
+            type="text"
+            placeholder="Username"
+            required
+            >
+        </div>
+        <button>submit</button>
+    </form>
+</body>
+</html>
