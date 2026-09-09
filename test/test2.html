@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test2.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Đăng Ký Tài Khoản</h2>
+        <form>
+            <div class="form-sign">
+                <p><b>Họ và Tên</b></p>
+                <input 
+                    type="text"
+                    placeholder="Nhập Họ và Tên"
+                >
+            </div>
+            <div class="form-sign">
+                <p><b>Email</b></p>
+                <input
+                    type="email"
+                    placeholder="Nhập Email"
+                    required
+                >
+            </div>
+            <div class="form-sign">
+                <p><b>Số Điện Thoại</b></p>
+                <input
+                    type="tel"
+                    placeholder="Nhập Số Điện Thoại"
+                    pattern="([0]{1} ([9,3,6,8]{1}) ([0-9]{8}))"
+                    required
+                >
+            </div>
+            <div class="form-sign">
+                <p><b>Tài khoản</b></p>
+                <input
+                    type="text"
+                    placeholder="Nhập tài khoản"
+                    required
+                >
+            </div>
+            <div class="form-sign">
+                <p><b>Mật khẩu</b></p>
+                <input
+                    type="password"
+                    placeholder="Nhập mật khẩu"
+                    required
+                >
+            </div>
+            <div class="form-sign">
+                <p><b>Xác nhận mật khẩu</b></p>
+                <input
+                    type="password"
+                    placeholder="Nhập lại mật khẩu"
+                    required
+                >
+            </div>
+            <button>Đăng ký</button>
+        </form>
+
+    </div>
+</body>
+</html>

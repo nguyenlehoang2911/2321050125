@@ -1,0 +1,40 @@
+.container{
+            background:#fff;
+            width:400px;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+        }
+body{
+            background:#f4f4f4;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:700px;
+            
+        }
+    /* .form-group{
+                margin-bottom:15px;
+            }
+            button{
+                width:100%;
+                padding:10px;
+                background:#007bff;
+                color:white;
+                border:none;
+                border-radius:5px;
+                cursor:pointer;
+                font-size:16px;
+            }
+            *{
+                margin:0;
+                padding:0;
+                box-sizing:border-box;
+                font-family:Arial, sans-serif;
+            }
+            input{
+                width:100%;
+                padding:10px;
+                border:1px solid #ccc;
+                border-radius:5px;
+            } */
