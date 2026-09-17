@@ -1,0 +1,210 @@
+        body{
+            margin:0;
+        }
+        .danhmuc{
+            background-color:#2fa4e7;
+            height:50px;
+        }
+        .danh-sach-muc{
+            padding:0;
+            margin:0;
+            display:flex;
+            list-style: none;
+            padding:15px;
+            gap:20px;
+            font-family: arial;
+            font-family: bold;
+        }
+        .danh-muc-chuc-nang{
+            border-bottom: #2fa4e7;
+        }
+        .muc-chuc-nang1{
+            padding:10px;
+            background-color:rgb(174, 216, 241);
+            border-bottom: #2fa4e7;
+        }
+        .muc-chuc-nang2{
+            padding:10px;
+            background-color:rgb(245, 245, 245);
+            border-bottom: #87c9ef;
+        }
+        a{
+            color:aliceblue;
+            text-decoration: none;
+            font-family: Arial;
+            font-weight: bold;
+            
+        }
+        a:hover{
+            color:#87c9ef;
+        }
+        main{
+            display:flex;
+        }
+        .left-content{
+            width:20%;
+            height:100vh;
+            border-right:2px solid #2fa4e7;
+        }
+        .right-content{
+            width:80%;
+            height:100vh;
+            margin-bottom: 490px;
+        }
+        .login{
+            display:flex;
+            justify-content: center;
+        }
+        form{
+            width:80%;
+            margin: 10px auto;
+        }
+        .khoi-thong-tin{
+            width:100%;
+            margin-bottom:10px;
+        }
+        a.trang-chu{
+            color:#2fa4e7;
+            font-family: arial;
+            font-weight: 200;
+        }
+        a.trang-chu:hover{
+            color:grey;
+        }
+        a.khao-sat{
+            color:#2fa4e7;
+            font-family: arial;
+            font-weight: 200;
+        }
+        a.khao-sat:hover{
+            color:grey;
+        }
+        .logo1{
+            margin-top: 200px;
+        }
+        .chuc-nang-anh {
+            display: flex;
+            justify-content: center; 
+            align-items: center;    
+        }
+        img.logo1{
+            width:200px;
+
+        }
+        
+        p{
+            margin-bottom:0;
+        }
+        input{
+            width:100%;
+            padding:5px 0;
+            border-radius: 5px;
+        }
+        .quen-mat-khau{
+            margin-left: 115px;
+            
+        }
+        a.quenmk{
+            color:#2fa4e7;
+            font-style: italic;
+        }
+        button{
+            width:100%;
+            padding:5px 0;
+        }
+        .b1{
+            background-color:#2fa4e7;
+            border-radius: 5px;
+            margin-top: 10px;
+            color:aliceblue;
+            font-family: arial;
+            font-weight: bold;
+            cursor:pointer;
+        }
+        .b2{
+            background-color:rgb(54, 113, 224);
+            border-radius: 5px;
+            margin-top: 10px;
+            color:aliceblue;
+            font-family:arial;
+            font-weight: bold;
+            cursor:pointer;
+        }
+        .tin{
+            width:95%;
+            background-color:white;
+            /* height:400px; */
+            margin:20px auto;
+            border:1px solid #2fa4e7;
+            border-radius:10px;
+        }
+        .chuc-nang{
+            width:95%;
+            display:flex;
+            justify-content: space-between;
+            margin:5px auto;
+            border-bottom:1px solid #2fa4e7;
+        }
+        .lien-ket-xem-tiep{
+            color:#2fa4e7
+        }
+        .khoi-tin{
+            display:flex;
+            gap:30px;
+            margin:25px 25px 25px 25px;
+        }
+        .anh{
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+            height:20vh;
+        }
+        h4{
+            color:grey;
+            margin-top: 5px;
+        }
+        h5{
+            margin-top: 5px;
+        }
+        .time{
+            text-align: end;
+            color:black;
+            border-bottom:1px solid #2fa4e7;
+        }
+        .khoi-thong-bao{
+            display:flex;
+            /* height:390px; */
+            width:100%;
+        }
+        .thong-bao-trai{
+            width:50%;
+            /* height:auto; */
+            border-right:1px solid grey;
+        }
+        .thong-bao-phai{
+            width:50%;
+            /* height:auto; */
+        }
+        .tin-tuc{
+            color:rgb(58, 57, 57);
+        }
+        .tin1{
+            color:black;
+            font-weight: light;
+        }
+        a.tin1:hover{
+            color:grey;
+        }
+        .thong-bao-tin{
+            margin: 25px 25px 25px 25px;
+            border-bottom:1px solid #2fa4e7;
+        }
+        .cai-dat{
+            display:flex;
+            justify-content: space-around;
+        }
+        img{
+            height:100px;
+        }
+        
+        

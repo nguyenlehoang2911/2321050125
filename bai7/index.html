@@ -4,114 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        body{
-            margin:0;
-        }
-        .danhmuc{
-            background-color:#2fa4e7;
-            height:50px;
-        }
-        .danh-sach-muc{
-            padding:0;
-            margin:0;
-            display:flex;
-            list-style: none;
-            padding:15px;
-            gap:20px;
-            font-family: arial;
-            font-family: bold;
-        }
-        a{
-            color:aliceblue;
-            text-decoration: none;
-            font-family: Arial;
-            font-weight: bold;
-            
-        }
-        a:hover{
-            color:#72ccfe;
-        }
-        main{
-            display:flex;
-        }
-        .left-content{
-            width:20%;
-            height:100vh;
-            border-right:2px solid #2fa4e7;
-        }
-        .right-content{
-            width:80%;
-            height:100vh;
-        }
-        .login{
-            display:flex;
-            justify-content: center;
-        }
-        form{
-            width:80%;
-            margin: 10px auto;
-        }
-        .khoi-thong-tin{
-            width:100%;
-            margin-bottom:10px;
-        }
-        p{
-            margin-bottom:0;
-        }
-        input{
-            width:100%;
-            padding:5px 0;
-            border-radius: 5px;
-        }
-        .quen-mat-khau{
-            margin-left: 115px;
-            
-        }
-        a.quenmk{
-            color:#2fa4e7;
-            font-style: italic;
-        }
-        button{
-            width:100%;
-            padding:5px 0;
-        }
-        .b1{
-            background-color:#2fa4e7;
-            border-radius: 5px;
-            margin-top: 10px;
-            color:aliceblue;
-            font-family: arial;
-            font-weight: bold;
-            cursor:pointer;
-        }
-        .b2{
-            background-color:rgb(54, 113, 224);
-            border-radius: 5px;
-            margin-top: 10px;
-            color:aliceblue;
-            font-family:arial;
-            font-weight: bold;
-            cursor:pointer;
-        }
-        .tin{
-            width:95%;
-            background-color:antiquewhite;
-            height:100px;
-            margin:20px auto;
-            border:1px solid #2fa4e7;
-            border-radius:10px;
-        }
-        .chuc-nang{
-            width:95%;
-            display:flex;
-            justify-content: space-between;
-            margin:5px auto;
-            border-bottom:1px solid #2fa4e7;
-        }
-        .lien-ket-xem-tiep{
-            color:#2fa4e7
-        }
     </style>
 </head>
 <body>
@@ -154,18 +48,180 @@
                     </div>
                 </form>
             </div>
-        </div>
-        <div class="right-content">
-            <div class="danh-sach-tin">
-                <div class="tin">
-                    <div class="chuc-nang">
-                        <div class="tieu_de">Tin tức</div>
-                        <div class="xem-tiep"><a href="#" class="lien-ket-xem-tiep">Xem tiếp</a></div>
-                    </div>
+            <div class="khoi-chuc-nang">
+                <div class="danh-muc-chuc-nang">
+                    <div class="muc-chuc-nang1"><a href="#" class="trang-chu">Trang chủ</a></div>
+                    <div class="muc-chuc-nang2"><a href="#" class="khao-sat">Khảo sát đánh giá</a></div>
+                </div>
+                <div class="chuc-nang-anh">
+                        <a href="#" class="logo">
+                            <img src="./anh/tải xuống.webp" class="logo1">
+                        </a>
                 </div>
             </div>
+            <div>
 
+            </div>
+        </div>
 
+            <div class="right-content">
+                <div class="danh-sach-tin">
+                <div class="tin">
+                    <div class="chuc-nang">
+                        <div class="tieu-de">Tin tức</div>
+                        <div class="xem-tiep"><a href="#" class="lien-ket-xem-tiep">Xem tiếp</a></div>
+                    </div>
+                    <div class="khoi-tin">
+
+                        <div class="tin-tuc1">
+                            <a href="#" class="lien-ket-tin-tuc">
+                                <img src="./anh/no_img.png" class="anh">
+                                <div class="time"><h5>15/04/2026</h5></div>
+                                    <div>
+                                        <h4>dang ky khoi luong hoc tap</h4>
+                                    </div>
+                            </a>
+                        </div>
+
+                        <div class="tin-tuc2">
+                            <a href="#" class="lien-ket-tin-tuc">
+                                <img src="./anh/no_img.png" class="anh">
+                                <div class="time"><h5>05/05/2026</h5></div>
+                                    <div>
+                                        <h4>dang ky khoi luong hoc tap</h4>
+                                    </div>
+                            </a>
+                        </div>
+
+                        <div class="tin-tuc3">
+                            <a href="#" class="lien-ket-tin-tuc">
+                                <img src="./anh/no_img.png" class="anh">
+                                <div class="time"><h5>29/04/2025</h5></div>
+                                    <div>
+                                        <h4>dang ky khoi luong hoc tap</h4>
+                                    </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                    <div class="tin">
+                        <div class="chuc-nang">
+                                <div class="tieu-de">Thông báo</div>
+                                <div class="xem-tiep"><a href="#" class="lien-ket-xem-tiep">Xem tiếp</a></div>
+                        </div>
+                        <div class="khoi-thong-bao">
+                                <div class="thong-bao-trai"> 
+                                    <div class="khoi-tin">
+                                        <div class="tin-tuc1">
+                                            <a href="#" class="lien-ket-tin-tuc">
+                                                <img src="./anh/no_img.png" class="anh">
+                                                <div class="time"><h5>15/04/2026</h5></div>
+                                                    <div>
+                                                        <h4>dang ky khoi luong hoc tap</h4>
+                                                    </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="tin-tuc2">
+                                            <a href="#" class="lien-ket-tin-tuc">
+                                                <img src="./anh/no_img.png" class="anh">
+                                                <div class="time"><h5>05/05/2026</h5></div>
+                                                    <div>
+                                                        <h4>dang ky khoi luong hoc tap</h4>
+                                                    </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="thong-bao-phai">
+                                    <div class="thong-bao-tin">
+                                        <div class="tb-tin1">
+                                            <a href="#" class="tin1">Thông báo về việc thực tập tốt nghiệp/doanh nghiệp và Đồ án/khóa luận tốt nghiệp của sinh viên đợt 1A năm học 2026-2027</a>
+                                        </div>
+                                    </div>
+                                    <div class="thong-bao-tin">
+                                        <div class="tb-tin1">
+                                            <a href="#" class="tin1">Thông báo về việc thực tập tốt nghiệp/doanh nghiệp và Đồ án/khóa luận tốt nghiệp của sinh viên đợt 1A năm học 2026-2027</a>
+                                        </div>
+                                    </div>
+                                    <div class="thong-bao-tin">
+                                        <div class="tb-tin1">
+                                            <a href="#" class="tin1">Thông báo về việc thực tập tốt nghiệp/doanh nghiệp và Đồ án/khóa luận tốt nghiệp của sinh viên đợt 1A năm học 2026-2027</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tin">
+                        <div class="chuc-nang">
+                            <div class="tieu-de">Thông báo</div>
+                            <div class="xem-tiep"><a href="#" class="lien-ket-xem-tiep">Xem tiếp</a></div>
+                        </div>
+                        <div class="khoi-thong-bao">
+                            <div class="thong-bao-trai">
+                                <div class="khoi-tin">
+                                    <div class="tin-tuc1">
+                                        <a href="#" class="lien-ket-tin-tuc">
+                                            <img src="./anh/no_img.png" class="anh">
+                                            <div class="time"><h5>15/04/2026</h5></div>
+                                                <div>
+                                                    <h4>dang ky khoi luong hoc tap</h4>
+                                                </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="tin-tuc2">
+                                        <a href="#" class="lien-ket-tin-tuc">
+                                            <img src="./anh/no_img.png" class="anh">
+                                            <div class="time"><h5>05/05/2026</h5></div>
+                                                <div>
+                                                    <h4>dang ky khoi luong hoc tap</h4>
+                                                </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="thong-bao-phai">
+                                <div class="thong-bao-tin">
+                                    <div class="tb-tin1">
+                                        <a href="#" class="tin1">Thông báo về việc thực tập tốt nghiệp/doanh nghiệp và Đồ án/khóa luận tốt nghiệp của sinh viên đợt 1A năm học 2026-2027</a>
+                                    </div>
+                                </div>
+                                <div class="thong-bao-tin">
+                                    <div class="tb-tin1">
+                                        <a href="#" class="tin1">Thông báo về việc thực tập tốt nghiệp/doanh nghiệp và Đồ án/khóa luận tốt nghiệp của sinh viên đợt 1A năm học 2026-2027</a>
+                                    </div>
+                                </div>
+                                <div class="thong-bao-tin">
+                                    <div class="tb-tin1">
+                                        <a href="#" class="tin1">Thông báo về việc thực tập tốt nghiệp/doanh nghiệp và Đồ án/khóa luận tốt nghiệp của sinh viên đợt 1A năm học 2026-2027</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="tin">
+                    <div class="chuc-nang">
+                        <div class="tieu-de">Cài đặt App Mobile</div>
+                    </div>
+                    <div class="cai-dat">
+                        <div class="img-cai-dat">
+                            <a href="#" class="img-cai-dat1"><img src="./anh/no_img.png"></a>
+                        </div>
+                        <div class="img-cai-dat">
+                            <a href="#" class="img-cai-dat1"><img src="./anh/no_img.png"></a>
+                        </div>
+                    </div>
+                 </div>
+            </div>
         </div>
     </main>
 </body>
