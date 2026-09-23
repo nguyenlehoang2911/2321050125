@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <!-- Internal JavaScript -->
+    <script>
+        // In ra màn hình
+        document.writeln("Hello World! <br> ");
+
+        // Khai báo biến
+
+        var name="Lê Hoàng <br>";
+        document.writeln(name);
+
+        name="Ly <br>";
+        document.writeln(name);
+
+        var year = 2026;
+        document.writeln(year + "<br>");
+
+        // Phép toán
+        var soThuNhat = 10;
+        var soThuHai = 5;
+        var ketQua = 0;
+        // Cộng
+        document.writeln("<br> Kết quả là:")
+        ketQua = soThuNhat + soThuHai;
+        document.writeln(ketQua +"<br>");
+        //Trừ
+        document.writeln("<br> Kết quả là:")
+        ketQua = soThuNhat - soThuHai;
+        document.writeln(ketQua +"<br>");
+        //Nhân
+        document.writeln("<br> Kết quả là:")
+        ketQua = soThuNhat * soThuHai;
+        document.writeln(ketQua +"<br>");
+        //Chia
+        document.writeln("<br> Kết quả là:")
+        ketQua = soThuNhat / soThuHai;
+        document.writeln(ketQua +"<br>");
+        //%
+        document.writeln("<br> Kết quả là:")
+        ketQua = soThuNhat % soThuHai;
+        document.writeln(ketQua +"<br>");
+
+        //++ 
+        document.writeln("<br>");
+        document.writeln(++soThuNhat);
+        //--
+        document.writeln("<br>");
+        document.writeln(--soThuNhat);
+        //+= soThuNhat= soThuNhat+soThuHai
+        soThuNhat += soThuHai;
+        document.writeln(soThuNhat +"<br>");
+        //-=
+        soThuNhat -= soThuHai;
+        document.writeln(soThuNhat +"<br>");
+        //Nối chuỗi
+        var ho ="Nguyen"
+        document.writeln("<br>" + ho + " " + name)
+        document.writeln("<br>")
+        //Kiểm tra độ dài chuỗi
+        document.writeln(ho.length);
+        //Kiểm tra kiểu dữ liệu của biến
+        document.writeln(ho.constructor + "<br>");
+        document.writeln(typeof(ho))
+        document.writeln("<br>")
+        //
+        var hoVaTen="Nguyễn Lê Hoàng";
+        document.writeln(hoVaTen.indexOf("Hoàng"));
+        document.writeln("<br>")
+        document.writeln(hoVaTen.includes("e"));
+        document.writeln("<br>")
+        document.writeln(hoVaTen.startsWith("Nguyễn"));
+        document.writeln(hoVaTen.replace("Lê", "Văn"));
+        document.writeln("<br>");
+        document.write(hoVaTen.toLocaleUpperCase());
+        document.writeln("<br>");
+        document.write(hoVaTen.toLocaleLowerCase());
+
+
+    </script>
+    <!-- External JavaScript -->
+     <script src="script.js"></script>
+</body>
+</html>
