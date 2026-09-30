@@ -1,19 +1,36 @@
-.boxed1{
-    padding:25px;
-    margin:50px;
-    box-sizing: content-box;
-}
-.tentruyen1{
-    background-color: red;
-    padding:50px;   
-}
-.boxed2{
-    padding:25px;
-    margin:50px;
-    box-sizing: content-box;
-}
-.tentruyen2{
-    background-color: red;
-    padding:50px; 
-    margin:100px;  
-}
+        body{
+            margin:0;
+        }
+        .danhmuc{
+            background-color:#2fa4e7;
+            height:50px;
+        }
+        .danh-sach-muc{
+            padding:0;
+            margin:0;
+            display:flex;
+            list-style: none;
+            padding:15px;
+            gap:20px;
+            font-family: arial;
+            font-family: bold;
+        }
+        .header-container{
+            width:80%;
+            margin:auto;
+        }
+        .main-container{
+            width:80%;
+            margin:auto;
+            display:flex;
+        }
+        .left-content{
+            width:20%;
+            height:500px;
+            background-color:blue;
+        }
+        .right-content{
+            width:80%;
+            height:500px;
+            background-color:red;
+        }
