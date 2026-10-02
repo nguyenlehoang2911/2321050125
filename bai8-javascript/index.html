@@ -188,13 +188,90 @@
         else {
             document.writeln("Đi học")
         }
+
         document.writeln("<br>");
-        var so = 10;
-        if(so%2 == 0){
+        var so = 2000000000001;
+        if(so%2 === 0){
             document.writeln("số chẵn");
         }else{
             document.writeln("số lẻ");
         }
+        document.writeln("<br>");
+        // var so = "20000000000000001"
+        // var doDai = so.length;
+        // var soCuoiCung = so[doDai-1];
+
+        //Switch case
+        var d = new Date();
+        var theDay = d.getDay();
+        switch(theDay) {
+            case 5:
+                document.write("Finally Friday");
+                break;
+            case 6:
+                document.write("Super Saturday");
+                break;
+            case 0:
+                document.write("Sleepy Sunday");
+                break;
+            default:
+                document.write("I'm looking forward to this weekend")
+        }
+
+        
+        //Loop For
+
+        for (var index = 1; index <= 10; index++){
+            document.writeln("<br>");
+            document.writeln("test lần thứ" + index);
+        }
+
+
+        for(var i = 0; i < mang.length; i++){
+            document.writeln("<br>");
+            // document.writeln(typeof(mang[i]));
+            document.writeln(mang[i]);
+            document.writeln("<br>");
+            if (isNaN(mang[i]) == false){
+                document.write("xinchao" + " " + mang[i]);
+            } 
+            else{
+                document.write("hello");
+            }
+        }
+
+        //While
+        i=0;
+        while(i <= 10) {
+            document.writeln("The number is " + i);
+            document.writeln("<br>");
+            i=i+1;
+        }
+        document.writeln("<br>");
+        var j = 0;
+        do{
+            document.write("The number is " + j);
+            document.write("<br>");
+            j = j + 1;
+
+        }while (j <= 10);
+
+        //Popup boxes
+        alert("Hello");
+
+        var r = confirm("Press a button");
+        if (r == true ) {
+            document.write("You pressed OK!")
+        }
+        else {
+            document.write("You presses Cancel!")
+        }
+        document.writeln("<br>");
+
+        var r = prompt("Test", "Type here");
+        document.write(r);
+
+        
     </script>
     <!-- External JavaScript -->
      <script src="script.js"></script>
