@@ -22,16 +22,38 @@
         }
         sayHello2("Hoàng");
 
+        
         var soThuNhat = prompt("Số thứ nhất", "Nhập số thứ nhất");
         var soThuHai = prompt("Số thứ hai", "Nhập số thứ hai");
-        function tinhTong(soThuNhat, soThuHai){
-            if((isNaN(soThuNhat) isNaN(soThuHai)) ){
-                document.write("<br>");
 
-                document.write(soThuNhat+soThuHai);
+            function tinhTong(soThuNhat, soThuHai) {
+                if (!isNaN(soThuNhat) && !isNaN(soThuHai)) {
+                    document.write("<br>");
+                    document.write(Number(soThuNhat) + Number(soThuHai));
+                } else {
+                    document.write("Vui lòng nhập hai số hợp lệ!");
             }
         }
-        tinhTong(soThuNhat, soThuHai);
+
+    tinhTong(soThuNhat, soThuHai);
+
+    var diemA = prompt("Điểm A", "Nhập điểm A");
+    var diemB = prompt("Điểm B", "Nhập điểm B");
+    var diemC = prompt("Điểm C", "Nhập điểm C");
+        function tinhDiem(diemA, diemB, diemC){
+            if(!isNaN(diemA) && !isNaN(diemB) && !isNaN(diemC)){
+                document.write("<br>");
+                document.write(Number(diemA) + Number(diemB) + Number(diemC));
+            } else{
+                 document.write("Vui lòng nhập hai số hợp lệ!");
+            }
+        }
+        tinhDiem(diemA, diemB, diemC);
+
+        // Viết hàm tính điểm chữ (A,B,C)
+        // parseInt("42") // result = 42
+        // parseInt("42.33") // result = 42
+        // parseFloat("1.1") = 1.1
     </script>
 </body>
 </html>

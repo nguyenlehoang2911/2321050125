@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var diemA = Number(prompt("Điểm A", "Nhập điểm A"));
+        var diemB = Number(prompt("Điểm B", "Nhập điểm B"));
+        var diemC = Number(prompt("Điểm C", "Nhập điểm C"));
+        function tinhDiem(diemA, diemB, diemC){
+            if(!isNaN(diemA) && !isNaN(diemB) && !isNaN(diemC)){
+                if(diemA >= 0 && diemA <= 10){
+                    if(diemB >= 0 && diemB <= 10 ){
+                        if(diemC >= 0 && diemC <= 10){
+                            return ( ( (diemA*0.6) + (diemB*0.3) + (diemC*0.1) ).toFixed(2) );
+                        }
+                    }
+                }else{
+                    return "Nhập sai giá trị"
+                }
+            }else{
+                return "Nhập sai định dạng"
+            }
+        }
+        document.writeln("Điểm hệ 10:" + " " + tinhDiem(diemA, diemB, diemC));
+
+        var r = tinhDiem(diemA, diemB, diemC);
+        function diemHe4(r){
+            return ( ((r/10)*4).toFixed(2) )
+        }
+        document.write("<br>");
+        document.writeln("Điểm hệ 4:" + " " + diemHe4(r));
+
+        var t = diemHe4(r);
+        function diemChu(t){
+            if(t >= 3.6 && t <= 4.0){
+                return "Xuất sắc"
+            }else if(t >= 3.2 && t < 3.6){
+                return "Giỏi"
+            }else if(t >= 2.5 && t < 3.2){
+                return "Khá"
+            }else if(t >= 2.0 && t < 2.5){
+                return "Trung bình"
+            }else if(t >= 1.0 && t < 2.0){
+                return "Yếu"
+            }else{
+                return "Kém"
+            }
+        }
+        document.write("<br>");
+        document.writeln("Xếp loại:" + " " + diemChu(t));
+    </script>
+</body>
+</html>

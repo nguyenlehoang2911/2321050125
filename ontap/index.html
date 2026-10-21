@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+        }
+        header{
+            /* background-color:red; */
+        }
+        main{
+            /* background-color: green; */
+        }
+        .header-container{
+            display: flex;
+            justify-content: space-between;
+            margin:0px 20px;
+        }
+        .login-button{
+            display: flex;
+            align-items: center;
+           
+        }
+        .login{
+            width:70px;
+            height:30px;
+            border-radius: 5px;
+        }
+        .main-container{
+            width:100%;
+            display:flex;
+        }
+        .left-content{
+            width:20%;
+            /* background-color: yellow; */
+        }
+        .right-content{
+            width:80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content-r{
+            width:50%;
+        }
+        .content-l{
+            width: 50%;
+        }
+        .tieu-de{
+            padding-left:50px;
+            margin-top: 100px;
+            color:grey;
+            font-family: 'Times New Roman';
+
+        }
+        .danh-sach-muc{
+            list-style: none;
+            font-family: arial;
+            font-family: bold;
+        }
+        .muc{
+            padding:10px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .main-content-button{
+            display: flex;
+        }
+        .get{
+            background-color: black;
+            color:white;
+            border-radius: 10px;
+            width:90px;
+            height:30px;
+            align-items: center;
+        }
+        .sth{
+            margin-top: 100px;
+        }
+        .content{
+            margin:0;
+            padding:10px;
+        }
+        .anh{
+            width:500px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>OpenAI</h1>
+            <div class="login-button">
+                <button class="login">
+                    Login
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="left-content">
+                <div class="tieu-de">
+                    <h3>Home</h3>
+                </div>
+                <div class="danh-sach-muc">
+                    <nav class="danhmuc">
+                        <ul class="danh-sach-muc">
+                            <li class="muc"><a href="#">API Platform</a></li>
+                            <li class="muc"><a href="#">API Platform</a></li>
+                            <li class="muc"><a href="#">API Platform</a></li>
+                            <li class="muc"><a href="#">API Platform</a></li>
+                            <li class="muc"><a href="#">API Platform</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="content-r">
+                    <div class="sth">
+                        <H1>Codex</H1>
+                        <div class="sthh">
+                            <h3>One agent for every where you code-included in Chat GPT Plus, Pro, Bussiness, Edu, Enterprice Plans</h3>
+                        </div>
+                    </div>
+                    <div class="main-content-button">
+                        <button class="get">Get Started</button>
+                        <h4 class="content">$ nmp i-g @OpenAI/codex</h4>
+                    </div>
+                </div>
+                <div class="content-l">
+                    <div class="img-content">
+                        <img class="anh" src="../anh/anh3.png">
+                        <img class="anh" src="../anh/anh3.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>

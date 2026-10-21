@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .header-container{
+            display: flex;
+            justify-content:space-between;
+            margin:0 20px;
+        }
+        .header-button{
+            display: flex;
+            align-items: center;
+        }
+        .login{
+            width:90px;
+            height:30px;
+            border: none;
+            border-radius: 5px;
+            background-color: lightgrey;
+        }
+        .main-container{
+            display: flex;
+            width:100%
+        }
+        .left-content{
+            width: 15%;
+            height: 500px;
+            
+        }
+        .right-content{
+            width: 85%;
+            height: 500px;
+        }
+        .danh-sach-muc{
+            list-style: none;
+        }
+        .muc{
+            padding: 10px;
+        }
+        a{
+            text-decoration: none;
+            color:black;
+        }
+        .danh-muc{
+            margin-top: 80px;
+        }
+        .muc:hover{
+            width: 110px;
+            background-color: lightgrey;
+            cursor: pointer;
+        }
+        .r-danh-sach-muc{
+            display: flex;
+            gap:40px;
+            list-style: none;
+            padding:0;
+        }
+        .r-danh-sach{
+            display: flex;
+            justify-content:space-between ;
+        }
+        .r-cn{
+            list-style: none;
+        }
+        .r-danh-sach-chuc-nang{
+            display: flex;
+            gap:40px;
+            margin-right: 100px;
+        }
+        .anh{
+            width: 100%;
+            height:300px;
+        }
+        .content-container{
+            display: flex;
+            gap:20px;
+            margin-top: 30px;
+            margin-right: 100px;
+        }
+        .time{
+            display:flex;
+            gap:15px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>OpenAI</h1>
+            </div>
+            <div class="header-button">
+                <button class="login">Login</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="left-content">
+                    <nav class="danh-muc">
+                        <ul class="danh-sach-muc">
+                            <li class="muc"><a href="#">Research</a></li>
+                            <li class="muc"><a href="#">Safety</a></li>
+                            <li class="muc"><a href="#">For Business</a></li>
+                            <li class="muc"><a href="#">For Developers</a></li>
+                            <li class="muc"><a href="#">Chat GPT</a></li>
+                            <li class="muc"><a href="#">Sora</a></li>
+                            <li class="muc"><a href="#">Stories</a></li>
+                            <li class="muc"><a href="#">Company</a></li>
+                            <li class="muc"><a href="#">News</a></li>
+                        </ul>
+                    </nav>
+            </div>
+            <div class="right-content">
+                <div class="tieu_de">
+                    <h1>News</h1>
+                </div>
+                <div class="r-danh-sach">
+                    <nav class="r-danh-muc">
+                        <ul class="r-danh-sach-muc">
+                            <li class="r-muc"><a href="#">Research</a></li>
+                            <li class="r-muc"><a href="#">Safety</a></li>
+                            <li class="r-muc"><a href="#">For Business</a></li>
+                            <li class="r-muc"><a href="#">For Developers</a></li>
+                            <li class="r-muc"><a href="#">Chat GPT</a></li>
+                            <li class="r-muc"><a href="#">Sora</a></li>
+                            <li class="r-muc"><a href="#">Stories</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="r-chuc-nang">
+                        <ul class="r-danh-sach-chuc-nang">
+                            <li class="r-cn"><a href="#">Filter</a></li>
+                            <li class="r-cn"><a href="#">Sort</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="content-container">
+                    <div class="img-container">
+                        <img class="anh" src="../anh/anh3.png">
+                        <div class="noi-dung-anh">
+                            <div class="noi-dung">
+                                Building towards age prediction
+                            </div>
+                            <div class="time">
+                                <div class="tinh-trang">Safety</div>
+                                <div class="ngay">Sep 16,2025</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="img-container">
+                        <img class="anh" src="../anh/anh3.png">
+                        <div class="noi-dung-anh">
+                            <div class="noi-dung">
+                                Building towards age prediction
+                            </div>
+                            <div class="time">
+                                <div class="tinh-trang">Safety</div>
+                                <div class="ngay">Sep 16,2025</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="img-container">
+                        <img class="anh" src="../anh/anh3.png">
+                        <div class="noi-dung-anh">
+                            <div class="noi-dung">
+                                Building towards age prediction
+                            </div>
+                            <div class="time">
+                                <div class="tinh-trang">Safety</div>
+                                <div class="ngay">Sep 16,2025</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

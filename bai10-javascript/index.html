@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        Nhap diem A: <input id="a" type="number">
+    </div>
+    <div>
+        Nhap diem B: <input id="b" type="number">
+    </div>
+    <div>
+        Nhap diem C: <input id="c" type="number">
+    </div>
+    <div>
+        <button onclick="tinh()" >Tinh diem</button>
+    </div>
+    <div>
+        Ket qua: <input id="ketQua" type="text">
+    </div>
+    <script>
+        function tinh(){
+            // diemA
+            var diemA = parseFloat(document.getElementById("a").value);
+            // diemB
+            var diemB = parseFloat(document.getElementById("b").value);
+            // diemC
+            var diemC = parseFloat(document.getElementById("c").value);
+
+            document.getElementById("ketQua").value = tinhDiem(diemA, diemB, diemC)
+
+        }
+        function tinhDiem(diemA, diemB, diemC){
+            var tong = diemA*0.6 + diemB*0.3 + diemC*0.1;
+            var kq="";
+            if(tong >= 0 && tong < 4) {
+                kq="F";
+            }
+            else if (tong >=4 && tong < 5){
+                kq="D"
+            }
+            else if (tong >= 5 && tong < 7){
+                kq="C"
+            }
+            else if (tong >= 7 && tong < 9){
+                kq="B"
+            }
+            else if (tong >=9 && tong <= 10){
+                kq="A"
+            }
+            return kq;
+        }
+    </script>
+</body>
+</html>

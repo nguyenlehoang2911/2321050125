@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính điểm hệ 10</title>
+</head>
+<body>
+    <script>
+        var diemA = prompt("Điểm A", "Nhập điểm A");
+        var diemB = prompt("Điểm B", "Nhập điểm B");
+        var diemC = prompt("Điểm C", "Nhập điểm C");
+
+        function tinhDiem(diemA, diemB, diemC) {
+            if (
+                diemA.trim() !== "" &&
+                diemB.trim() !== "" &&
+                diemC.trim() !== "" &&
+                !isNaN(diemA) &&
+                !isNaN(diemB) &&
+                !isNaN(diemC)
+            ) {
+                if (
+                    diemA >= 0 && diemA <= 10 &&
+                    diemB >= 0 && diemB <= 10 &&
+                    diemC >= 0 && diemC <= 10
+                ) {
+                    return (
+                        Number(diemA) * 0.6 +
+                        Number(diemB) * 0.3 +
+                        Number(diemC) * 0.1
+                    ).toFixed(2);
+                } else {
+                    return "Điểm phải từ 0 đến 10!";
+                }
+            } else {
+                return "Vui lòng nhập đủ 3 điểm hợp lệ!";
+            }
+        }
+
+        var r = tinhDiem(diemA, diemB, diemC);
+        function tinhDiem4(r){
+            if(!isNaN(r)){
+                return ((r/10)*4);
+            } else{
+                return "Lỗi !!!";
+            }
+        }
+
+        document.writeln("<br>");
+        document.writeln(
+            "Điểm hệ 10 là: " + tinhDiem(diemA, diemB, diemC)
+        );
+
+        document.writeln("<br>");
+        document.writeln(
+            "Điểm hệ 4 là: " + tinhDiem4(r)
+        );
+    </script>
+</body>
+</html>
