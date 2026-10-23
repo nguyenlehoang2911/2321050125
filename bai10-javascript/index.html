@@ -21,6 +21,16 @@
     <div>
         Ket qua: <input id="ketQua" type="text">
     </div>
+    <br>
+    <div>
+        Nhap nam sinh: <input id="nam" type="number">
+    </div>
+    <div>
+        Ket qua: <input id="ketQua" type="number">
+    </div>
+    <div>
+        <button onclick="tinh()">Tinh tuoi</button>
+    </div>
     <script>
         function tinh(){
             // diemA
@@ -53,6 +63,26 @@
             }
             return kq;
         }
+
+        function tinh(){
+            var namSinh = parseInt(document.getElementById("nam").value)
+
+            document.getElementById("ketQua").value = tinhTuoi(namSinh)
+        }
+        
+        function tinhTuoi(namSinh){
+            var t = new Date();
+            var r = t.getFullYear();
+            var tuoi = parseInt(r) - namSinh;
+            
+            return tuoi;
+        }
+
+
+
+
+        
+        
     </script>
 </body>
 </html>

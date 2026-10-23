@@ -52,10 +52,9 @@
             background-color: #4e4b52;
         }
         .banner{
-            background-color:aliceblue;
-            width:95%;
+            width:100%;
            /* height:40vh; */
-            margin:20px auto;
+            margin:20px 40px;
             border-radius: 20px;
         }
         .banner-anh{
@@ -132,8 +131,16 @@
             </div>
     </header>
     <main>
-        <div class="banner">
-            <img class="banner-anh" src="./anh/1789694066985_594133685213132084_g5130481569213036345_f874b0684015739d1a925eb13d10a810.jpg">
+
+        <div onclick="xemTrailer()" class="banner">
+            <img class="banner-anh" src="./anh/labrador.jpg">
+        </div>
+
+        <div style="display: none;" class="banner">
+            <iframe class="trailer" width="100%" height="700px"  src="https://www.youtube.com/embed/OuNo8Tkb3lI?si=bAExUI65U_MdnaY5" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div class="danh-sach-the-loai">
             <div class="the-loai">
@@ -261,5 +268,7 @@
             </div>
         </div>
     </footer>
+    <script src="./script.js">
+    </script>
 </body>
 </html>
