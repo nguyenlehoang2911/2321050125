@@ -53,13 +53,15 @@
         }
         .banner{
             width:100%;
-           /* height:40vh; */
-            margin:20px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             border-radius: 20px;
         }
         .banner-anh{
-            width:100%;
+            width:95%;
             border-radius: 20px;
+
             
         }
         .danh-sach-the-loai{
@@ -71,18 +73,20 @@
         .phim{
             display:flex;
             justify-content: space-between;
+            gap:20px;
         }
         .phim-poster{
             width:24%;
-            height:15vh;
+            height:50vh;
             border-radius: 15px;
             background-color: aliceblue;
         }
+        .phim-poster:hover{
+
+            cursor: pointer;
+        }
         .danh-sach-the-loai{
             margin:20px auto;
-        }
-        .phim{
-            gap:5px;
         }
         .nhan-vat-poster{
             width: 12%;
@@ -114,7 +118,7 @@
     <header>
         <nav class="danh-muc">
             <ul class="danh-sach-muc">
-                <img class="logo" src="./anh/Netflix-Logo-1536x864.png">
+                <img class="logo" src="./anh/logo/Netflix-Logo-1536x864.png">
                 <li class="muc dang-chon"><a href="#" class="lien-ket-muc">Trang chủ</a></li>
                 <li class="muc"><a href="#" class="lien-ket-muc">Nhân vật</a></li>
                 <li class="muc"><a href="#" class="lien-ket-muc">Series</a></li>
@@ -127,14 +131,14 @@
             <div clas="chuc-nang">
                 <div class="tim-kiem"></div>
                 <div class="thong-tin">
-                    <img class="avata" src="./anh/1789693316415_594133685213132084_g5130481569213036345_3925268ddadaf04a89e4c720b090dc72.jpg">
+                    <img class="avata" src="./anh/logo/logo1.jpg">
                 </div>
             </div>
     </header>
     <main>
 
         <div onclick="xemTrailer(0)" class="banner">
-            <img class="banner-anh" src="./anh/labrador.jpg">
+            <img class="banner-anh" src="./anh/hoat-hinh/labrador.jpg">
         </div>
 
         <div style="display: none;" class="banner">
@@ -146,17 +150,15 @@
         <div class="danh-sach-the-loai">
             <div class="the-loai">
                 <div class="ten-the-loai">
-                   <h2>Có thể bạn chưa xem</h2>
+                   <h2>Thể loại Hành động</h2>
                 </div>
                 <div class="danh-sach-phim">
                     <div class="phim">
-                        <img onclick="xemTrailer(1)" class="phim-poster" src="./anh/poster-phim-hoat-hinh-02.webp">
-                        <img onclick="xemTrailer(2)" class="phim-poster" src="./anh/poster-phim-hoat-hinh-03.webp">
-                        <img onclick="xemTrailer(3)" class="phim-poster" src="./anh/poster-phim-hoat-hinh-20.webp">
-                        <img onclick="xemTrailer(4)" class="phim-poster" src="./anh/poster-phim-hoat-hinh-24.webp">
-                        <img onclick="xemTrailer(5)" class="phim-poster" src="./anh/poster-phim-hoat-hinh-32.webp">
-                        <img onclick="xemTrailer(6)" class="phim-poster" src="./anh/poster-phim-hoat-hinh-09.webp">
-                        <img onclick="xemTrailer(7)"class="phim-poster" src="./anh/poster-phim-hoat-hinh-12.webp">
+                        <img onclick="xemTrailer(1)" class="phim-poster" src="./anh/hanh-dong/die-hard.jpg">
+                        <img onclick="xemTrailer(2)" class="phim-poster" src="./anh/hanh-dong/dark-knight.jpg">
+                        <img onclick="xemTrailer(3)" class="phim-poster" src="./anh/hanh-dong/mad-max.jpg">
+                        <img onclick="xemTrailer(4)" class="phim-poster" src="./anh/hanh-dong/terminator.jpg">
+                        <img onclick="xemTrailer(5)" class="phim-poster" src="./anh/hanh-dong/the-matrix.jpg">
                     </div>
                 </div>
             </div>
@@ -165,17 +167,15 @@
         <div class="danh-sach-the-loai">
             <div class="the-loai">
                 <div class="ten-the-loai">
-                   <h2>Có thể bạn chưa xem</h2>
+                   <h2>Thể loại Hài hước</h2>
                 </div>
                 <div class="danh-sach-phim">
                     <div class="phim">
-                        <img class="phim-poster" src="./anh/poster-phim-hoat-hinh-02.webp">
-                        <img class="phim-poster" src="./anh/poster-phim-hoat-hinh-03.webp">
-                        <img class="phim-poster" src="./anh/poster-phim-hoat-hinh-20.webp">
-                        <img class="phim-poster" src="./anh/poster-phim-hoat-hinh-24.webp">
-                        <img class="phim-poster" src="./anh/poster-phim-hoat-hinh-32.webp">
-                        <img class="phim-poster" src="./anh/poster-phim-hoat-hinh-09.webp">
-                        <img class="phim-poster" src="./anh/poster-phim-hoat-hinh-12.webp">
+                        <img onclick="xemTrailer(6)" class="phim-poster" src="./anh/hai-huoc/bruce-almighty.jpg">
+                        <img onclick="xemTrailer(7)" class="phim-poster" src="./anh/hai-huoc/freeguy.jpg">
+                        <img onclick="xemTrailer(8)" class="phim-poster" src="./anh/hai-huoc/hangover.jpg">
+                        <img onclick="xemTrailer(9)" class="phim-poster" src="./anh/hai-huoc/home-alone.jpg">
+                        <img onclick="xemTrailer(10)" class="phim-poster" src="./anh/hai-huoc/the-mask.jpg">
                     </div>
                 </div>
             </div>
@@ -184,17 +184,15 @@
         <div class="danh-sach-the-loai">
             <div class="the-loai">
                 <div class="ten-the-loai">
-                   <h2>Có thể bạn chưa xem</h2>
+                   <h2>Thể loại Tình cảm</h2>
                 </div>
                 <div class="danh-sach-phim">
                     <div class="phim">
-                        <img class="phim-poster" src="./anh/poster-phim-hoat-hinh-02.webp">
-                        <img class="phim-poster" src="./anh/poster-phim-hoat-hinh-03.webp">
-                        <img class="phim-poster" src="./anh/poster-phim-hoat-hinh-20.webp">
-                        <img class="phim-poster" src="./anh/poster-phim-hoat-hinh-24.webp">
-                        <img class="phim-poster" src="./anh/poster-phim-hoat-hinh-32.webp">
-                        <img class="phim-poster" src="./anh/poster-phim-hoat-hinh-09.webp">
-                        <img class="phim-poster" src="./anh/poster-phim-hoat-hinh-12.webp">
+                        <img onclick="xemTrailer(11)" class="phim-poster" src="./anh/tinh-cam/anyone.jpg">
+                        <img onclick="xemTrailer(12)" class="phim-poster" src="./anh/tinh-cam/lalaland.jpg">
+                        <img onclick="xemTrailer(13)" class="phim-poster" src="./anh/tinh-cam/notebook.jpg">
+                        <img onclick="xemTrailer(14)" class="phim-poster" src="./anh/tinh-cam/pride.jpg">
+                        <img onclick="xemTrailer(15)" class="phim-poster" src="./anh/tinh-cam/titanic.jpg">
                     </div>
                 </div>
             </div>
@@ -203,17 +201,15 @@
         <div class="danh-sach-the-loai">
             <div class="the-loai">
                 <div class="ten-the-loai">
-                   <h2>Có thể bạn chưa xem</h2>
+                   <h2>Thể loại Kinh dị</h2>
                 </div>
                 <div class="danh-sach-phim">
                     <div class="phim">
-                        <img class="phim-poster" src="./anh/poster-phim-hoat-hinh-02.webp">
-                        <img class="phim-poster" src="./anh/poster-phim-hoat-hinh-03.webp">
-                        <img class="phim-poster" src="./anh/poster-phim-hoat-hinh-20.webp">
-                        <img class="phim-poster" src="./anh/poster-phim-hoat-hinh-24.webp">
-                        <img class="phim-poster" src="./anh/poster-phim-hoat-hinh-32.webp">
-                        <img class="phim-poster" src="./anh/poster-phim-hoat-hinh-09.webp">
-                        <img class="phim-poster" src="./anh/poster-phim-hoat-hinh-12.webp">
+                        <img onclick="xemTrailer(16)" class="phim-poster" src="./anh/kinh-di/exorcist.jpg">
+                        <img onclick="xemTrailer(17)" class="phim-poster" src="./anh/kinh-di/getout.jpg">
+                        <img onclick="xemTrailer(18)" class="phim-poster" src="./anh/kinh-di/scream.jpg">
+                        <img onclick="xemTrailer(19)" class="phim-poster" src="./anh/kinh-di/the-conjuring.jpg">
+                        <img onclick="xemTrailer(20)" class="phim-poster" src="./anh/kinh-di/the-shining.jpg">
                     </div>
                 </div>
             </div>
@@ -222,22 +218,37 @@
         <div class="danh-sach-the-loai">
             <div class="the-loai">
                 <div class="ten-the-loai">
-                   <h2>Có thể bạn chưa xem</h2>
+                   <h2>Thể loại Viễn tưởng</h2>
                 </div>
-                <div class="danh-sach-nhan-vat">
+                <div class="danh-sach-phim">
                     <div class="phim">
-                        <img class="nhan-vat-poster" src="./anh/poster-phim-hoat-hinh-02.webp">
-                        <img class="nhan-vat-poster" src="./anh/poster-phim-hoat-hinh-02.webp">
-                        <img class="nhan-vat-poster" src="./anh/poster-phim-hoat-hinh-02.webp">
-                        <img class="nhan-vat-poster" src="./anh/poster-phim-hoat-hinh-02.webp">
-                        <img class="nhan-vat-poster" src="./anh/poster-phim-hoat-hinh-02.webp">
-                        <img class="nhan-vat-poster" src="./anh/poster-phim-hoat-hinh-02.webp">
-                        <img class="nhan-vat-poster" src="./anh/poster-phim-hoat-hinh-02.webp">
-                        <img class="nhan-vat-poster" src="./anh/poster-phim-hoat-hinh-02.webp">
+                        <img onclick="xemTrailer(21)" class="phim-poster" src="./anh/vien-tuong/arrival.jpg">
+                        <img onclick="xemTrailer(22)" class="phim-poster" src="./anh/vien-tuong/bttf.jpg">
+                        <img onclick="xemTrailer(23)" class="phim-poster" src="./anh/vien-tuong/interstellar.jpg">
+                        <img onclick="xemTrailer(24)" class="phim-poster" src="./anh/vien-tuong/jurassic.jpg">
+                        <img onclick="xemTrailer(25)" class="phim-poster" src="./anh/vien-tuong/martian.jpg">
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="danh-sach-the-loai">
+            <div class="the-loai">
+                <div class="ten-the-loai">
+                   <h2>Thể loại Hoạt hình</h2>
+                </div>
+                <div class="danh-sach-phim">
+                    <div class="phim">
+                        <img onclick="xemTrailer(26)" class="phim-poster" src="./anh/hoat-hinh/coco.jpg">
+                        <img onclick="xemTrailer(27)" class="phim-poster" src="./anh/hoat-hinh/dragon.jpg">
+                        <img onclick="xemTrailer(28)" class="phim-poster" src="./anh/hoat-hinh/nemo.jpg">
+                        <img onclick="xemTrailer(29)" class="phim-poster" src="./anh/hoat-hinh/spiderman.jpg">
+                        <img onclick="xemTrailer(30)" class="phim-poster" src="./anh/hoat-hinh/toystory.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
     <footer>
         <div class="danh-sach-thong-tin">
@@ -269,7 +280,7 @@
             </div>
         </div>
     </footer>
-    <script src="./script.js">
+    <script src="./script1.js">
     </script>
 </body>
 </html>
