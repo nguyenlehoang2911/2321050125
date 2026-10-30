@@ -1,3 +1,5 @@
+CREATE DATABASE IF NOT EXISTS netflix;
+
 CREATE TABLE IF NOT EXISTS nguoi_dung(
 	id int PRIMARY KEY AUTO_INCREMENT NOT NULL,
     ten_dang_nhap varchar(30),
